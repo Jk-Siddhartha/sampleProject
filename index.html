@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sample Site</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="outer-div" id="outerDiv">
+      <img src="./arrow-up.png" alt="arrowUp" class="back-to-top" />
+      <div class="main-div" id="mainDiv">
+        <div class="home-background"></div>
+        <div class="navbar">
+          <h2><a href="#">KnowMe</a></h2>
+          <nav>
+            <ul id="menu-list">
+              <li><a href="#mainDiv">HOME</a></li>
+              <li><a href="#about">ABOUT</a></li>
+              <li><a href="#login">LOGIN</a></li>
+              <li><a href="#register">REGISTRATION</a></li>
+            </ul>
+          </nav>
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/812/812847.png"
+            alt="menu-icon"
+            class="menu-icon"
+            onclick="togglemenu()"
+          />
+        </div>
+        <div class="home">
+          <div class="text">
+            <h2>Hey Welcome to mySite..... KnowMe</h2>
+            <p>
+              I'm Jaikishan Vishvakarma and here you can create your account by
+              registring and can also access it by login.
+            </p>
+            <button class="btn">Click Here to Explore More</button>
+          </div>
+          <img src="./user.png" alt="" class="user-logo" />
+        </div>
+      </div>
+      <div class="about" id="about">
+        <div class="home-background" style="left: -23.5%; width: 80%"></div>
+        <img src="./aboutimg.jpg" alt="" class="about-img" />
+        <div class="about-text">
+          <h2>About Text</h2>
+          <p>
+            Hello guys, I'm Jaikishan Vishvakarma one of the founder of KnowMe
+            and along with me u will find Mr. Siddhartha who is my partner. Our
+            website deliver the information which is basically about urself and
+            here u can create ur account with minimum difficulties and can
+            possibly do all the task with very less efforts.
+          </p>
+        </div>
+      </div>
+      <div class="login" id="login">
+        <div class="login-container">
+          <h2>Login Here</h2>
+          <div>
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/3135/3135715.png"
+              alt="login-user-icon"
+              class="login-user-icon"
+            />
+          </div>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Username Here.."
+          />
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password Here.."
+          />
+          <button class="btn loginBtn">Login</button>
+        </div>
+      </div>
+      <div class="register" id="register">
+        <div class="register-container">
+          <h2>Registe Urself Here</h2>
+          <div>
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/3135/3135715.png"
+              alt="login-user-icon"
+              class="login-user-icon"
+            />
+          </div>
+          <input type="text" name="name" id="name" placeholder="Name Here.." />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email Here.."
+          />
+          <input
+            type="number"
+            name="phone"
+            id="phone"
+            placeholder="Phone Here.."
+          />
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password Here.."
+          />
+          <input
+            type="password"
+            name="cpassword"
+            id="cpassword"
+            placeholder="Confirm Password"
+          />
+
+          <button class="btn loginBtn">Login</button>
+        </div>
+      </div>
+    </div>
+    <script>
+      var menuList = document.getElementById("menu-list");
+      menuList.style.maxHeight = "0px";
+      function togglemenu() {
+        if (menuList.style.maxHeight == "0px") {
+          menuList.style.maxHeight = "150px";
+        } else {
+          menuList.style.maxHeight = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>
